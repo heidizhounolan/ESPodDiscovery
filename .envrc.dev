@@ -1,0 +1,4 @@
+export DATABASE_URL=tcp://infra-mysql.symphony.com:3306/pod_discovery
+export GRPC_API_URL=localhost:50051
+export HOST=localhost
+export PORT=50051

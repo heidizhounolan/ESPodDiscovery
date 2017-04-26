@@ -1,0 +1,626 @@
+hosts:
+  local:
+    addr:
+      localhost:8081
+    cluster:
+      LOCAL
+  ab:
+    addr:
+      abglobal.symphony.com
+    groups:
+      - PROD
+  abam:
+    addr:
+      aam.symphony.com
+    groups:
+      - PROD
+  algo:
+    addr:
+      algomi.symphony.com
+    groups:
+      - PROD
+  amun:
+    addr:
+      amundi.symphony.com
+    groups:
+      - PROD
+  anz:
+    addr:
+      anz.symphony.com
+    groups:
+      - PROD
+  arke:
+    addr:
+      arkemessenger.symphony.com
+    groups:
+      - PROD
+  arx:
+    addr:
+      arxis.symphony.com
+    groups:
+      - PROD
+  axio:
+    addr:
+      axioma.symphony.com
+    groups:
+      - PROD
+  bac:
+    addr:
+      baml.symphony.com
+    groups:
+      - PROD
+  bam:
+    addr:
+      bamfunds.symphony.com
+    groups:
+      - PROD
+  bere:
+    addr:
+      berenberg.symphony.com
+    groups:
+      - PROD
+  bk:
+    addr:
+      bnymellon.symphony.com
+    groups:
+      - PROD
+  blk:
+    addr:
+      blackrock.symphony.com
+    groups:
+      - PROD
+  bnip:
+    addr:
+      bnpip.symphony.com
+    groups:
+      - PROD
+  bnpc:
+    addr:
+      bnppcib.symphony.com
+    groups:
+      - PROD
+  bpet:
+    addr:
+      pictet.symphony.com
+    groups:
+      - PROD
+  bpgi:
+    addr:
+      bostonpartners.symphony.com
+    groups:
+      - PROD
+  brdr:
+    addr:
+      broadridge.symphony.com
+    groups:
+      - PROD
+  brhw:
+    addr:
+      brevanhoward.symphony.com
+    groups:
+      - PROD
+  cant:
+    addr:
+      cantillon.symphony.com
+    groups:
+      - PROD
+  caci:
+    addr:
+      ca-cib.symphony.com
+    groups:
+      - PROD
+  capg:
+    addr:
+      capgroup.symphony.com
+    groups:
+      - PROD
+  caxt:
+    addr:
+      caxton.symphony.com
+    groups:
+      - PROD
+  cdel:
+    addr:
+      citadel.symphony.com
+    groups:
+      - PROD
+  celr:
+    addr:
+      celera-markets.symphony.com
+    groups:
+      - PROD
+  chiq:
+    addr:
+      chartiq.symphony.com
+    groups:
+      - PROD
+  cimb:
+    addr:
+      cimb.symphony.com
+    groups:
+      - PROD
+  citi:
+    addr:
+      citi.symphony.com
+    groups:
+      - PROD
+  cjcs:
+    addr:
+      cjcit.symphony.com
+    groups:
+      - PROD
+  clsa:
+    addr:
+      clsa.symphony.com
+    groups:
+      - PROD
+  corn:
+    addr:
+      cornellinvestment.symphony.cm
+    groups:
+      - PROD
+  cred:
+    addr:
+      creditsights.symphony.com
+    groups:
+      - PROD
+  cs:
+    addr:
+      creditsuisse.symphony.com
+    groups:
+      - PROD
+  dans:
+    addr:
+      danskebank.symphony.com
+    groups:
+      - PROD
+  db:
+    addr:
+      db.symphony.com
+    groups:
+      - PROD
+  dcap:
+    addr:
+      discovery.symphony.com
+    groups:
+      - PROD
+  dino:
+    addr:
+      dinogroup.symphony.com
+    groups:
+      - PROD
+  dowj:
+    addr:
+      dowjones.symphony.com
+    groups:
+      - PROD
+  drw:
+    addr:
+      drw.symphony.com
+    groups:
+      - PROD
+  dta:
+    addr:
+      dtadvisers.symphony.com
+    groups:
+      - PROD
+  ebnp:
+    addr:
+      exane.symphony.com
+    groups:
+      - PROD
+  edfm:
+    addr:
+      edfmcm.symphony.com
+    groups:
+      - PROD
+  engi:
+    addr:
+      engie.symphony.com
+    groups:
+      - PROD
+  fid:
+    addr:
+      fidelity.symphony.com
+    groups:
+      - PROD
+  fint:
+    addr:
+      fintechstudios.symphony.com
+    groups:
+      - PROD
+  fis:
+    addr:
+      marketmap.symphony.com
+    groups:
+      - PROD
+  fort:
+    addr:
+      fortress.symphony.com
+    groups:
+      - PROD
+  fset:
+    addr:
+      factset.symphony.com
+    groups:
+      - PROD
+  fxtr:
+    addr:
+      flextrade.symphony.com
+    groups:
+      - PROD
+  gama:
+    addr:
+      gama.symphony.com
+    groups:
+      - PROD
+  gelb:
+    addr:
+      gelber.symphony.com
+    groups:
+      - PROD
+  gic:
+    addr:
+      gic.symphony.com
+    groups:
+      - PROD
+  gkt:
+    addr:
+      greenkeytech.symphony.com
+    groups:
+      - PROD
+  gle:
+    addr:
+      socgen.symphony.com
+    groups:
+      - PROD
+  gs:
+    addr:
+      gs.symphony.com
+    groups:
+      - PROD
+  hamr:
+    addr:
+      hammerstonemarkets.symphony.com
+    groups:
+      - PROD
+  hrve:
+    addr:
+      hvst.symphony.com
+    groups:
+      - PROD
+  hsbc:
+    addr:
+      hsbc.symphony.com
+    groups:
+      - PROD
+  icap:
+    addr:
+      icap.symphony.com
+    groups:
+      - PROD
+  iex:
+    addr:
+      cornellinvestment.symphony.com
+    groups:
+      - PROD
+  infr:
+    addr:
+      infront.symphony.com
+    groups:
+      - PROD
+  ing:
+    addr:
+      ing.symphony.com
+    groups:
+      - PROD
+  ipc:
+    addr:
+      ipc.symphony.com
+    groups:
+      - PROD
+  ipre:
+    addr:
+      ipreo.symphony.com
+    groups:
+      - PROD
+  itgr:
+    addr:
+      itg.symphony.com
+    groups:
+      - PROD
+  jef:
+    addr:
+      jefferies.symphony.com
+    groups:
+      - PROD
+  jpm:
+    addr:
+      jpm.symphony.com
+    groups:
+      - PROD
+  kcg:
+    addr:
+      kcg.symphony.com
+    groups:
+      - PROD
+  kemp:
+    addr:
+      kempen.symphony.com
+    groups:
+      - PROD
+  kepl:
+    addr:
+      kepler.symphony.com
+    groups:
+      - PROD
+  king:
+    addr:
+      kingdon.symphony.com
+    groups:
+      - PROD
+  koyf:
+    addr:
+      koyfin.symphony.com
+    groups:
+      - PROD
+  lbrt:
+    addr:
+      lmi.symphony.com
+    groups:
+      - PROD
+  lnr:
+    addr:
+      linear.symphony.com
+    groups:
+      - PROD
+  lrda:
+    addr:
+      lordabbett.symphony.com
+    groups:
+      - PROD
+  marb:
+    addr:
+      marblegate.symphony.com
+    groups:
+      - PROD
+  mari:
+    addr:
+      mariana.symphony.com
+    groups:
+      - PROD
+  mavc:
+    addr:
+      maverickcap.symphony.com
+    groups:
+      - PROD
+  mhfi:
+    addr:
+      mhfi.symphony.com
+    groups:
+      - PROD
+  mony:
+    addr:
+      money.symphony.com
+    groups:
+      - PROD
+  mrkt:
+    addr:
+      markit.symphony.com
+    groups:
+      - PROD
+  ms:
+    addr:
+      morganstanley.symphony.com
+    groups:
+      - PROD
+  nbim:
+    addr:
+      nbim.symphony.com
+    groups:
+      - PROD
+  nexj:
+    addr:
+      nexj.symphony.com
+    groups:
+      - PROD
+  nhis:
+    addr:
+      nhisac.symphony.com
+    groups:
+      - PROD
+  nmr:
+    addr:
+      nomura.symphony.com
+    groups:
+      - PROD
+  ntxs:
+    addr:
+      natixis.symphony.com
+    groups:
+      - PROD
+  ocbc:
+    addr:
+      ocbc.symphony.com
+    groups:
+      - PROD
+  opdr:
+    addr:
+      opendoorllc.symphony.com
+    groups:
+      - PROD
+  otcx:
+    addr:
+      otcexgroup.symphony.com
+    groups:
+      - PROD
+  poin:
+    addr:
+      point72.symphony.com
+    groups:
+      - PROD
+  pusp:
+    addr:
+      ipushpull.symphony.com
+    groups:
+      - PROD
+  putn:
+    addr:
+      putnam.symphony.com
+    groups:
+      - PROD
+  qick:
+    addr:
+      quick.symphony.com
+    groups:
+      - PROD
+  rbc:
+    addr:
+      rbc.symphony.com
+    groups:
+      - PROD
+  rbno:
+    addr:
+      rubino.symphony.com
+    groups:
+      - PROD
+  redb:
+    addr:
+      redburn.symphony.com
+    groups:
+      - PROD
+  redd:
+    addr:
+      reddeer.symphony.com
+    groups:
+      - PROD
+  rubc:
+    addr:
+      rubriccapital.symphony.com
+    groups:
+      - PROD
+  selr:
+    addr:
+      selerity.symphony.com
+    groups:
+      - PROD
+  sig:
+    addr:
+      sig.symphony.com
+    groups:
+      - PROD
+  ssrt:
+    addr:
+      stocksmart.symphony.com
+    groups:
+      - PROD
+  sucd:
+    addr:
+      sucfin.symphony.com
+    groups:
+      - PROD
+  corp:
+    addr:
+      sym-corp-stage-guse1-aha1.symphony.com
+    groups:
+      - PROD
+  preview:
+    addr:
+      preview.symphony.com
+    groups:
+      - PROD
+  pubmy:
+    addr:
+      my.symphony.com
+    groups:
+      - PROD
+  symf:
+    addr:
+      foundation.symphony.com
+    groups:
+      - PROD
+  symt:
+    addr:
+      symmetry.symphony.com
+    groups:
+      - PROD
+  sync:
+    addr:
+      synchronoss.symphony.com
+    groups:
+      - PROD
+  sysm:
+    addr:
+      systemmetrics.symphony.com
+    groups:
+      - PROD
+  tcom:
+    addr:
+      techcombank.symphony.com
+    groups:
+      - PROD
+  trad:
+    addr:
+      emeatradition.symphony.com
+    groups:
+      - PROD
+  tril:
+    addr:
+      triland.symphony.com
+    groups:
+      - PROD
+  trow:
+    addr:
+      troweprice.symphony.com
+    groups:
+      - PROD
+  tweb:
+    addr:
+      tradeweb.symphony.com
+    groups:
+      - PROD
+  ubs:
+    addr:
+      ubs.symphony.com
+    groups:
+      - PROD
+  vant:
+    addr:
+      vcmhk.symphony.com
+    groups:
+      - PROD
+  vcm:
+    addr:
+      vcmllp.symphony.com
+    groups:
+      - PROD
+  virt:
+    addr:
+      virtu.symphony.com
+    groups:
+      - PROD
+  walb:
+    addr:
+      wallachbeth.symphony.com
+    groups:
+      - PROD
+  welm:
+    addr:
+      wellington.symphony.com
+    groups:
+      - PROD
+  wfc:
+    addr:
+      wellsfargo.symphony.com
+    groups:
+      - PROD
+  wonc:
+    addr:
+      williamoneil.symphony.com
+    groups:
+      - PROD
+  wtb:
+    addr:
+      whb.symphony.com
+    groups:
+      - PROD

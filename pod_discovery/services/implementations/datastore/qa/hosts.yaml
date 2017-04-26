@@ -1,0 +1,86 @@
+hosts:
+  cip1-qa:
+    addr:
+      cip1-qa.symphony.com
+    groups:
+      - CIP-QA
+  cip2-qa:
+    addr:
+      cip2-qa.symphony.com
+    groups:
+      - CIP-QA
+  cip3-qa:
+    addr:
+      cip3-qa.symphony.com
+    groups:
+      - CIP-QA
+  cip4-qa:
+    addr:
+      cip4-qa.symphony.com
+    groups:
+      - CIP-QA
+  qa3:
+    addr:
+      qa3.symphony.com
+    cluster:
+      QA3
+    groups:
+      - QA
+      - Odd
+  qa4:
+    addr:
+      qa4.symphony.com
+    cluster:
+      QA4
+    groups:
+      - QA
+      - Even
+  qa5:
+    addr:
+      qa5.symphony.com
+    cluster:
+      QA5
+    groups:
+      - QA
+      - Odd
+  qa6:
+    addr:
+      qa6.symphony.com
+    cluster:
+      QA6
+    groups:
+      - QA
+      - Even
+  qa7:
+    addr:
+      qa7.symphony.com
+    cluster:
+      SYM-QA7-QA-CHAT-GLB-1
+    groups:
+      - QA
+      - Odd
+  qa8:
+    addr:
+      qa8.symphony.com
+    cluster:
+      QA8
+    groups:
+      - QA
+      - Even
+  qa12:
+    addr:
+      sym-qa12-qa-ause1-aha1.symphony.com
+    groups:
+      - QA
+      - Even
+  qa22:
+    addr:
+      qa22.symphony.com
+    groups:
+      - QA
+      - Even
+  local:
+    addr:
+      localhost:8081
+    cluster:
+      LOCAL

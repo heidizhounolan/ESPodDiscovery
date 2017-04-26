@@ -1,0 +1,176 @@
+hosts:
+  local:
+    addr:
+      localhost:8081
+    cluster:
+      LOCAL
+  ab-uat:
+    addr:
+      abglobal-test.symphony.com
+    groups:
+      - UAT
+  bac-uat:
+    addr:
+      baml-test.symphony.com
+    groups:
+      - UAT
+  bam-uat:
+    addr:
+      bamfunds-test.symphony.com
+    groups:
+      - UAT
+  bk-uat:
+    addr:
+      bk-uat-ause1-all.symphony.com
+    groups:
+      - UAT
+  blk-uat-1:
+    addr:
+      blackrock-test.symphony.com
+    groups:
+      - UAT
+  blk-uat-2:
+    addr:
+      blackrock-test2.symphony.com
+    groups:
+      - UAT
+  cdel-uat:
+    addr:
+      citadel-test.symphony.com
+    groups:
+      - UAT
+  citi-uat:
+    addr:
+      citi-uat.symphony.com
+    groups:
+      - UAT
+  cs-uat:
+    addr:
+      creditsuisse-uat.symphony.com
+    groups:
+      - UAT
+  db-uat:
+    addr:
+      db-test.symphony.com
+    groups:
+      - UAT
+  fset-uat:
+    addr:
+      factset-test.symphony.com
+    groups:
+      - UAT
+  gs-uat:
+    addr:
+      gs-uat.symphony.com
+    groups:
+      - UAT
+  gs-uat-2:
+    addr:
+      gs-uat2.symphony.com
+    groups:
+      - UAT
+  gs-uat-3:
+    addr:
+      gs-uat3.symphony.com
+    groups:
+      - UAT
+  hsbc-uat:
+    addr:
+      hsbc-test.symphony.com
+    groups:
+      - UAT
+  iap-uat:
+    addr:
+      icap-test.symphony.com
+    groups:
+      - UAT
+  ipre-uat:
+    addr:
+      ipreo-test.symphony.com
+    groups:
+      - UAT
+  itgr-uat:
+    addr:
+      itg-test.symphony.com
+    groups:
+      - UAT
+  jef-uat:
+    addr:
+      jefferies-test.symphony.com
+    groups:
+      - UAT
+  jpm-uat:
+    addr:
+      jpm-uat.symphony.com
+    groups:
+      - UAT
+  lbrt-uat:
+    addr:
+      lmi-test.symphony.com
+    groups:
+      - UAT
+  mavc-uat:
+    addr:
+      maverickcap-test.symphony.com
+    groups:
+      - UAT
+  mrkt-uat:
+    addr:
+      markit-test.symphony.com
+    groups:
+      - UAT
+  ms-uat:
+    addr:
+      morganstanley-test.symphony.com
+    groups:
+      - UAT
+  nmr-uat:
+    addr:
+      jpm-uat.symphony.com
+    groups:
+      - UAT
+  ntxs-uat:
+    addr:
+      natixis-test.symphony.com
+    groups:
+      - UAT
+  poin-uat:
+    addr:
+      point72-test.symphony.com
+    groups:
+      - UAT
+  rbc-uat:
+    addr:
+      rbc-test.symphony.com
+    groups:
+      - UAT
+  sup-uat:
+    addr:
+      sup.symphony.com
+    groups:
+      - UAT
+  symf-uat:
+    addr:
+      foundation-test.symphony.com
+    groups:
+      - UAT
+  trow-uat:
+    addr:
+      troweprice-test.symphony.com
+    groups:
+      - UAT
+  ubs-uat:
+    addr:
+      ubs-test.symphony.com
+    groups:
+      - UAT
+  wfc-uat:
+    addr:
+      wellsfargo-uat.symphony.com
+    groups:
+      - UAT
+  wonc-uat:
+    addr:
+      williamoneil-test.symphony.com
+    groups:
+      - UAT

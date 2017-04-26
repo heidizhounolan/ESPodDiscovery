@@ -1,0 +1,61 @@
+hosts:
+  des2:
+    addr:
+      sym-des2-dev-ause1-all.symphony.com
+    cluster:
+      SYM-DES2-DEV-CHAT-GLB-1
+  des3:
+    addr:
+      sym-des3-dev-ause1-all.symphony.com
+    cluster:
+      SYM-DES3-DEV-CHAT-GLB-1
+  des4:
+    addr:
+      sym-des4-dev-ause1-all.symphony.com
+    cluster:
+      SYM-DES4-DEV-CHAT-GLB-1
+  cip1:
+    addr:
+      cip1-qa.symphony.com
+    groups:
+      - CIP
+  cip2:
+    addr:
+      sym-cip2-dev-ause1-all.symphony.com
+    groups:
+      - CIP
+  cip3:
+    addr:
+      sym-cip3-dev-ause1-aha1.symphony.com
+    groups:
+      - CIP
+  cip4:
+    addr:
+      sym-cip4-dev-ause1-all.symphony.com
+    groups:
+      - CIP
+  local:
+    addr:
+      localhost:8081
+    cluster:
+      LOCAL
+  ac5-dev:
+    addr:
+      ac5-dev.symphony.com
+    groups:
+      - DEV
+  ac6-dev:
+    addr:
+      ac6-dev.symphony.com
+    groups:
+      - DEV
+  ac7-dev:
+    addr:
+      ac7-dev.symphony.com
+    groups:
+      - DEV
+  ac8-dev:
+    addr:
+      ac8-dev.symphony.com
+    groups:
+      - DEV

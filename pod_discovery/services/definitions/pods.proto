@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package pod_discovery;
+
+// Manages pod data.
+service PodMaster {
+  // Get an pod by id.
+  rpc GetPod (GetPodRequest) returns (GetPodResponse) {}
+}
+
+message Pod {
+  int32 id = 1;
+  string pod_name = 2;
+  string vanity_url = 3;
+}
+
+// The request message for [PodMaster.GetPod].
+message GetPodRequest {
+  int32 id = 1;
+}
+
+// The response message for [PodMaster.GetPod].
+message GetPodResponse {
+  Pod pod = 1;
+}
