@@ -1,5 +1,6 @@
 import threading
-import grpc
+
+from pod_discovery.services.server import grpc
 from pod_discovery.services.stubs import health_pb2
 
 

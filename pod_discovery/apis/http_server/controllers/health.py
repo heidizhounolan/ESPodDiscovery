@@ -3,13 +3,14 @@
 Exposes the blueprint as a module-level variable named `health`.
 """
 import json
-import grpc
 from flask import Blueprint
+from healthcheck import HealthCheck
 from ripozo.adapters import JSONAPIAdapter
 from ripozo.exceptions import RestException
-from healthcheck import HealthCheck
+
+from pod_discovery.apis.http_server.services import health_conn
+from pod_discovery.services.server import grpc
 from pod_discovery.services.stubs import health_pb2
-from pod_discovery.apis.http.services import health_conn
 
 # pylint: disable=invalid-name
 health = Blueprint('health', __name__)

@@ -1,7 +1,5 @@
 FROM python:3.5
 
-MAINTAINER Support Portal Development - Heidi <support-portal-dev@symphony.com>
-
 # Ensure that Python outputs everything that's printed inside
 # the application rather than buffering it.
 ENV PYTHONUNBUFFERED 1

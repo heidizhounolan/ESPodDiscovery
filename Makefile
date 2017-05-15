@@ -2,6 +2,11 @@ GIT_COMMIT=$(shell git rev-parse --verify HEAD)
 PROJECT_NAME=pod_discovery
 SERVICE_DEFN_DIR=./$(PROJECT_NAME)/services/definitions
 SERVICE_STUB_DIR=./$(PROJECT_NAME)/services/stubs
+SERVICE_SERVER_DIR=./$(PROJECT_NAME)/services/server
+SERVICE_SERVER_NAME="pod_discovery_server.py"
+SERVICE_CLIENT_DIR=./$(PROJECT_NAME)/client_example
+SERVICE_CLIENT_NAME="pod_discovery_client.py"
+
 
 .PHONY: build
 build:
@@ -10,10 +15,6 @@ build:
     -t $(PROJECT_NAME):latest \
     -t $(PROJECT_NAME):${GIT_COMMIT} \
     .
-
-.PHONY: clean
-clean:
-	py.cleanup -p .
 
 .PHONY: down
 down:
@@ -33,7 +34,7 @@ protogen:
 				 -I=$(SERVICE_DEFN_DIR) \
 				 --python_out=$(SERVICE_STUB_DIR) \
 				 --grpc_python_out=$(SERVICE_STUB_DIR) \
-				 $(SERVICE_DEFN_DIR)/items.proto $(SERVICE_DEFN_DIR)/health.proto
+				 $(SERVICE_DEFN_DIR)/pod_discovery.proto $(SERVICE_DEFN_DIR)/health.proto
 
 # Usage: make run-text-api ARGS="check_health"
 # 			 make run-text-api ARGS="get_item 1"
@@ -47,7 +48,11 @@ run-http-api:
 
 .PHONY: run-grpc-api
 run-grpc-api:
-	python -m $(PROJECT_NAME).apis.grpc
+	python $(SERVICE_SERVER_DIR)/$(SERVICE_SERVER_NAME)
+
+.PHONY: run-grpc-client
+run-grpc-client:
+	python $(SERVICE_CLIENT_DIR)/$(SERVICE_CLIENT_NAME)
 
 .PHONY: up
 up:

@@ -3,7 +3,7 @@
 Exposes the WSGI callable as a module-level variable named `app`.
 """
 import os
-from pod_discovery.apis.http import create_app
+from pod_discovery.apis.http_server import create_app
 
 # pylint: disable=invalid-name
 env = os.environ.get('ENV', 'development')

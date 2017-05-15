@@ -1,19 +1,18 @@
-version: '2'
+version: '3'
 services:
   grpc_api:
-    command: dockerize -wait tcp://infra-mysql.symphony.com:3306 ./scripts/run-grpc-api.dev.sh
+    command: dockerize ./scripts/run-grpc-api.dev.sh
     image: pod_discovery
     environment:
       # must bind to [::] for port forwarding to work properly
       - HOST=[::]
       - PORT=50051
-      - DATABASE_URL=tcp://infra-mysql.symphony.com:3306/
     networks:
       default:
         aliases:
           - grpc_api.pod_discovery.site
     ports:
-      - "50051:50051"
+      - "51051:50051"
     volumes:
       - ./:/opt/pod_discovery/
   http_api:

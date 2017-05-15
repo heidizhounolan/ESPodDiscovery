@@ -4,16 +4,17 @@
 
 Interfaces with grpc stubs which in turn interface with core service logic.
 """
-import grpc
 from flask import Flask, Response
+from pod_discovery.apis.http_server.controllers.pods import pods
 from ripozo.adapters import JSONAPIAdapter
 from ripozo.exceptions import RestException
-from pod_discovery.apis.http.controllers.main import main
-from pod_discovery.apis.http.controllers.health import health
-from pod_discovery.apis.http.controllers.pods import pods
-from pod_discovery.apis.http.services import health_conn, pods_conn
-from pod_discovery.apis.http.exceptions import (
+
+from pod_discovery.apis.http_server.controllers.health import health
+from pod_discovery.apis.http_server.controllers.main import main
+from pod_discovery.apis.http_server.exceptions import (
     InternalServerException, NotFoundException)
+from pod_discovery.apis.http_server.services import health_conn, pods_conn
+from pod_discovery.services.server import grpc
 
 
 def create_app(object_name):

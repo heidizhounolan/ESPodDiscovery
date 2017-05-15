@@ -9,7 +9,7 @@ from ripozo.manager_base import BaseManager
 from ripozo.adapters import JSONAPIAdapter
 from ripozo.resources.fields.common import StringField, IntegerField
 from pod_discovery.services.stubs import pods_pb2
-from pod_discovery.apis.http.services import pods_conn
+from pod_discovery.apis.http_server.services import pods_conn
 
 # pylint: disable=invalid-name
 pods = Blueprint('pods', __name__)
