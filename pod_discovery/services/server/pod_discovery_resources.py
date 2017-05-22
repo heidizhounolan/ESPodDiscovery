@@ -18,7 +18,7 @@ def read_pod_discovery_database():
         try:
             data = yaml.load(pod_list_db_file)
             for host in data['hosts']:
-                vanity_url, cluster, group = None, None, None
+                vanity_url, cluster, group = "", "", ""
                 if 'addr' in data['hosts'][host].keys():
                     vanity_url = data['hosts'][host]['addr']
                 if 'groups' in data['hosts'][host].keys():
