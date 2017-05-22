@@ -24,6 +24,8 @@ RUN pip install -r requirements/dev.txt
 
 COPY . /opt/pod_discovery
 
+EXPOSE 51051
+
 # Server and clients are run from same container
 # so rely on docker compose to determine command
-CMD []
+CMD python /opt/pod_discovery/pod_discovery/services/server/pod_discovery_server.py
