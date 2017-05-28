@@ -13,7 +13,7 @@ class HealthStub(object):
       channel: A grpc.Channel.
     """
     self.Check = channel.unary_unary(
-        '/pod_discovery.Health/Check',
+        '/com.symphony.service.poddiscovery.grpc.Health/Check',
         request_serializer=health__pb2.HealthCheckRequest.SerializeToString,
         response_deserializer=health__pb2.HealthCheckResponse.FromString,
         )
@@ -36,5 +36,5 @@ def add_HealthServicer_to_server(servicer, server):
       ),
   }
   generic_handler = grpc.method_handlers_generic_handler(
-      'pod_discovery.Health', rpc_method_handlers)
+      'com.symphony.service.poddiscovery.grpc.Health', rpc_method_handlers)
   server.add_generic_rpc_handlers((generic_handler,))

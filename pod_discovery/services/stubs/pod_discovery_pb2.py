@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='pod_discovery.proto',
-  package='pod_discovery',
+  package='com.symphony.service.poddiscovery.grpc',
   syntax='proto3',
-  serialized_pb=_b('\n\x13pod_discovery.proto\x12\rpod_discovery\"\x1d\n\x07PodName\x12\x12\n\nvanity_url\x18\x01 \x01(\t\"%\n\x0eListPodRequest\x12\x13\n\x0b\x65nvironment\x18\x01 \x01(\t\"K\n\x03Pod\x12\x10\n\x08pod_name\x18\x01 \x01(\t\x12\x12\n\nvanity_url\x18\x02 \x01(\t\x12\x0f\n\x07\x63luster\x18\x03 \x01(\t\x12\r\n\x05group\x18\x04 \x01(\t2\x89\x01\n\x0cPodDiscovery\x12\x36\n\x06GetPod\x12\x16.pod_discovery.PodName\x1a\x12.pod_discovery.Pod\"\x00\x12\x41\n\x08ListPods\x12\x1d.pod_discovery.ListPodRequest\x1a\x12.pod_discovery.Pod\"\x00\x30\x01\x42\t\xa2\x02\x06PODDSCb\x06proto3')
+  serialized_pb=_b('\n\x13pod_discovery.proto\x12&com.symphony.service.poddiscovery.grpc\"\x1d\n\x07PodName\x12\x12\n\nvanity_url\x18\x01 \x01(\t\"%\n\x0eListPodRequest\x12\x13\n\x0b\x65nvironment\x18\x01 \x01(\t\"K\n\x03Pod\x12\x10\n\x08pod_name\x18\x01 \x01(\t\x12\x12\n\nvanity_url\x18\x02 \x01(\t\x12\x0f\n\x07\x63luster\x18\x03 \x01(\t\x12\r\n\x05group\x18\x04 \x01(\t2\xed\x01\n\x0cPodDiscovery\x12h\n\x06GetPod\x12/.com.symphony.service.poddiscovery.grpc.PodName\x1a+.com.symphony.service.poddiscovery.grpc.Pod\"\x00\x12s\n\x08ListPods\x12\x36.com.symphony.service.poddiscovery.grpc.ListPodRequest\x1a+.com.symphony.service.poddiscovery.grpc.Pod\"\x00\x30\x01\x42\t\xa2\x02\x06PODDSCb\x06proto3')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -28,13 +28,13 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _PODNAME = _descriptor.Descriptor(
   name='PodName',
-  full_name='pod_discovery.PodName',
+  full_name='com.symphony.service.poddiscovery.grpc.PodName',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='vanity_url', full_name='pod_discovery.PodName.vanity_url', index=0,
+      name='vanity_url', full_name='com.symphony.service.poddiscovery.grpc.PodName.vanity_url', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -52,20 +52,20 @@ _PODNAME = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=38,
-  serialized_end=67,
+  serialized_start=63,
+  serialized_end=92,
 )
 
 
 _LISTPODREQUEST = _descriptor.Descriptor(
   name='ListPodRequest',
-  full_name='pod_discovery.ListPodRequest',
+  full_name='com.symphony.service.poddiscovery.grpc.ListPodRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='environment', full_name='pod_discovery.ListPodRequest.environment', index=0,
+      name='environment', full_name='com.symphony.service.poddiscovery.grpc.ListPodRequest.environment', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -83,41 +83,41 @@ _LISTPODREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=69,
-  serialized_end=106,
+  serialized_start=94,
+  serialized_end=131,
 )
 
 
 _POD = _descriptor.Descriptor(
   name='Pod',
-  full_name='pod_discovery.Pod',
+  full_name='com.symphony.service.poddiscovery.grpc.Pod',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='pod_name', full_name='pod_discovery.Pod.pod_name', index=0,
+      name='pod_name', full_name='com.symphony.service.poddiscovery.grpc.Pod.pod_name', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='vanity_url', full_name='pod_discovery.Pod.vanity_url', index=1,
+      name='vanity_url', full_name='com.symphony.service.poddiscovery.grpc.Pod.vanity_url', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='cluster', full_name='pod_discovery.Pod.cluster', index=2,
+      name='cluster', full_name='com.symphony.service.poddiscovery.grpc.Pod.cluster', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='group', full_name='pod_discovery.Pod.group', index=3,
+      name='group', full_name='com.symphony.service.poddiscovery.grpc.Pod.group', index=3,
       number=4, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -135,8 +135,8 @@ _POD = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=108,
-  serialized_end=183,
+  serialized_start=133,
+  serialized_end=208,
 )
 
 DESCRIPTOR.message_types_by_name['PodName'] = _PODNAME
@@ -146,21 +146,21 @@ DESCRIPTOR.message_types_by_name['Pod'] = _POD
 PodName = _reflection.GeneratedProtocolMessageType('PodName', (_message.Message,), dict(
   DESCRIPTOR = _PODNAME,
   __module__ = 'pod_discovery_pb2'
-  # @@protoc_insertion_point(class_scope:pod_discovery.PodName)
+  # @@protoc_insertion_point(class_scope:com.symphony.service.poddiscovery.grpc.PodName)
   ))
 _sym_db.RegisterMessage(PodName)
 
 ListPodRequest = _reflection.GeneratedProtocolMessageType('ListPodRequest', (_message.Message,), dict(
   DESCRIPTOR = _LISTPODREQUEST,
   __module__ = 'pod_discovery_pb2'
-  # @@protoc_insertion_point(class_scope:pod_discovery.ListPodRequest)
+  # @@protoc_insertion_point(class_scope:com.symphony.service.poddiscovery.grpc.ListPodRequest)
   ))
 _sym_db.RegisterMessage(ListPodRequest)
 
 Pod = _reflection.GeneratedProtocolMessageType('Pod', (_message.Message,), dict(
   DESCRIPTOR = _POD,
   __module__ = 'pod_discovery_pb2'
-  # @@protoc_insertion_point(class_scope:pod_discovery.Pod)
+  # @@protoc_insertion_point(class_scope:com.symphony.service.poddiscovery.grpc.Pod)
   ))
 _sym_db.RegisterMessage(Pod)
 
@@ -188,12 +188,12 @@ try:
         channel: A grpc.Channel.
       """
       self.GetPod = channel.unary_unary(
-          '/pod_discovery.PodDiscovery/GetPod',
+          '/com.symphony.service.poddiscovery.grpc.PodDiscovery/GetPod',
           request_serializer=PodName.SerializeToString,
           response_deserializer=Pod.FromString,
           )
       self.ListPods = channel.unary_stream(
-          '/pod_discovery.PodDiscovery/ListPods',
+          '/com.symphony.service.poddiscovery.grpc.PodDiscovery/ListPods',
           request_serializer=ListPodRequest.SerializeToString,
           response_deserializer=Pod.FromString,
           )
@@ -232,7 +232,7 @@ try:
         ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
-        'pod_discovery.PodDiscovery', rpc_method_handlers)
+        'com.symphony.service.poddiscovery.grpc.PodDiscovery', rpc_method_handlers)
     server.add_generic_rpc_handlers((generic_handler,))
 
 
@@ -280,16 +280,16 @@ try:
     file not marked beta) for all further purposes. This function was
     generated only to ease transition from grpcio<0.15.0 to grpcio>=0.15.0"""
     request_deserializers = {
-      ('pod_discovery.PodDiscovery', 'GetPod'): PodName.FromString,
-      ('pod_discovery.PodDiscovery', 'ListPods'): ListPodRequest.FromString,
+      ('com.symphony.service.poddiscovery.grpc.PodDiscovery', 'GetPod'): PodName.FromString,
+      ('com.symphony.service.poddiscovery.grpc.PodDiscovery', 'ListPods'): ListPodRequest.FromString,
     }
     response_serializers = {
-      ('pod_discovery.PodDiscovery', 'GetPod'): Pod.SerializeToString,
-      ('pod_discovery.PodDiscovery', 'ListPods'): Pod.SerializeToString,
+      ('com.symphony.service.poddiscovery.grpc.PodDiscovery', 'GetPod'): Pod.SerializeToString,
+      ('com.symphony.service.poddiscovery.grpc.PodDiscovery', 'ListPods'): Pod.SerializeToString,
     }
     method_implementations = {
-      ('pod_discovery.PodDiscovery', 'GetPod'): face_utilities.unary_unary_inline(servicer.GetPod),
-      ('pod_discovery.PodDiscovery', 'ListPods'): face_utilities.unary_stream_inline(servicer.ListPods),
+      ('com.symphony.service.poddiscovery.grpc.PodDiscovery', 'GetPod'): face_utilities.unary_unary_inline(servicer.GetPod),
+      ('com.symphony.service.poddiscovery.grpc.PodDiscovery', 'ListPods'): face_utilities.unary_stream_inline(servicer.ListPods),
     }
     server_options = beta_implementations.server_options(request_deserializers=request_deserializers, response_serializers=response_serializers, thread_pool=pool, thread_pool_size=pool_size, default_timeout=default_timeout, maximum_timeout=maximum_timeout)
     return beta_implementations.server(method_implementations, options=server_options)
@@ -302,19 +302,19 @@ try:
     file not marked beta) for all further purposes. This function was
     generated only to ease transition from grpcio<0.15.0 to grpcio>=0.15.0"""
     request_serializers = {
-      ('pod_discovery.PodDiscovery', 'GetPod'): PodName.SerializeToString,
-      ('pod_discovery.PodDiscovery', 'ListPods'): ListPodRequest.SerializeToString,
+      ('com.symphony.service.poddiscovery.grpc.PodDiscovery', 'GetPod'): PodName.SerializeToString,
+      ('com.symphony.service.poddiscovery.grpc.PodDiscovery', 'ListPods'): ListPodRequest.SerializeToString,
     }
     response_deserializers = {
-      ('pod_discovery.PodDiscovery', 'GetPod'): Pod.FromString,
-      ('pod_discovery.PodDiscovery', 'ListPods'): Pod.FromString,
+      ('com.symphony.service.poddiscovery.grpc.PodDiscovery', 'GetPod'): Pod.FromString,
+      ('com.symphony.service.poddiscovery.grpc.PodDiscovery', 'ListPods'): Pod.FromString,
     }
     cardinalities = {
       'GetPod': cardinality.Cardinality.UNARY_UNARY,
       'ListPods': cardinality.Cardinality.UNARY_STREAM,
     }
     stub_options = beta_implementations.stub_options(host=host, metadata_transformer=metadata_transformer, request_serializers=request_serializers, response_deserializers=response_deserializers, thread_pool=pool, thread_pool_size=pool_size)
-    return beta_implementations.dynamic_stub(channel, 'pod_discovery.PodDiscovery', cardinalities, options=stub_options)
+    return beta_implementations.dynamic_stub(channel, 'com.symphony.service.poddiscovery.grpc.PodDiscovery', cardinalities, options=stub_options)
 except ImportError:
   pass
 # @@protoc_insertion_point(module_scope)

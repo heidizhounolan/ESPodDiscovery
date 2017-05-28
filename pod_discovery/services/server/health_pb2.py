@@ -17,9 +17,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='health.proto',
-  package='pod_discovery',
+  package='com.symphony.service.poddiscovery.grpc',
   syntax='proto3',
-  serialized_pb=_b('\n\x0chealth.proto\x12\rpod_discovery\"%\n\x12HealthCheckRequest\x12\x0f\n\x07service\x18\x01 \x01(\t\"\x93\x01\n\x13HealthCheckResponse\x12@\n\x06status\x18\x01 \x01(\x0e\x32\x30.pod_discovery.HealthCheckResponse.ServingStatus\":\n\rServingStatus\x12\x0b\n\x07UNKNOWN\x10\x00\x12\x0b\n\x07SERVING\x10\x01\x12\x0f\n\x0bNOT_SERVING\x10\x02\x32X\n\x06Health\x12N\n\x05\x43heck\x12!.pod_discovery.HealthCheckRequest\x1a\".pod_discovery.HealthCheckResponseb\x06proto3')
+  serialized_pb=_b('\n\x0chealth.proto\x12&com.symphony.service.poddiscovery.grpc\"%\n\x12HealthCheckRequest\x12\x0f\n\x07service\x18\x01 \x01(\t\"\xac\x01\n\x13HealthCheckResponse\x12Y\n\x06status\x18\x01 \x01(\x0e\x32I.com.symphony.service.poddiscovery.grpc.HealthCheckResponse.ServingStatus\":\n\rServingStatus\x12\x0b\n\x07UNKNOWN\x10\x00\x12\x0b\n\x07SERVING\x10\x01\x12\x0f\n\x0bNOT_SERVING\x10\x02\x32\x8b\x01\n\x06Health\x12\x80\x01\n\x05\x43heck\x12:.com.symphony.service.poddiscovery.grpc.HealthCheckRequest\x1a;.com.symphony.service.poddiscovery.grpc.HealthCheckResponseb\x06proto3')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -27,7 +27,7 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 _HEALTHCHECKRESPONSE_SERVINGSTATUS = _descriptor.EnumDescriptor(
   name='ServingStatus',
-  full_name='pod_discovery.HealthCheckResponse.ServingStatus',
+  full_name='com.symphony.service.poddiscovery.grpc.HealthCheckResponse.ServingStatus',
   filename=None,
   file=DESCRIPTOR,
   values=[
@@ -46,21 +46,21 @@ _HEALTHCHECKRESPONSE_SERVINGSTATUS = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=160,
-  serialized_end=218,
+  serialized_start=210,
+  serialized_end=268,
 )
 _sym_db.RegisterEnumDescriptor(_HEALTHCHECKRESPONSE_SERVINGSTATUS)
 
 
 _HEALTHCHECKREQUEST = _descriptor.Descriptor(
   name='HealthCheckRequest',
-  full_name='pod_discovery.HealthCheckRequest',
+  full_name='com.symphony.service.poddiscovery.grpc.HealthCheckRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='service', full_name='pod_discovery.HealthCheckRequest.service', index=0,
+      name='service', full_name='com.symphony.service.poddiscovery.grpc.HealthCheckRequest.service', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -78,20 +78,20 @@ _HEALTHCHECKREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=31,
-  serialized_end=68,
+  serialized_start=56,
+  serialized_end=93,
 )
 
 
 _HEALTHCHECKRESPONSE = _descriptor.Descriptor(
   name='HealthCheckResponse',
-  full_name='pod_discovery.HealthCheckResponse',
+  full_name='com.symphony.service.poddiscovery.grpc.HealthCheckResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='status', full_name='pod_discovery.HealthCheckResponse.status', index=0,
+      name='status', full_name='com.symphony.service.poddiscovery.grpc.HealthCheckResponse.status', index=0,
       number=1, type=14, cpp_type=8, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -110,8 +110,8 @@ _HEALTHCHECKRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=71,
-  serialized_end=218,
+  serialized_start=96,
+  serialized_end=268,
 )
 
 _HEALTHCHECKRESPONSE.fields_by_name['status'].enum_type = _HEALTHCHECKRESPONSE_SERVINGSTATUS
@@ -122,14 +122,14 @@ DESCRIPTOR.message_types_by_name['HealthCheckResponse'] = _HEALTHCHECKRESPONSE
 HealthCheckRequest = _reflection.GeneratedProtocolMessageType('HealthCheckRequest', (_message.Message,), dict(
   DESCRIPTOR = _HEALTHCHECKREQUEST,
   __module__ = 'health_pb2'
-  # @@protoc_insertion_point(class_scope:pod_discovery.HealthCheckRequest)
+  # @@protoc_insertion_point(class_scope:com.symphony.service.poddiscovery.grpc.HealthCheckRequest)
   ))
 _sym_db.RegisterMessage(HealthCheckRequest)
 
 HealthCheckResponse = _reflection.GeneratedProtocolMessageType('HealthCheckResponse', (_message.Message,), dict(
   DESCRIPTOR = _HEALTHCHECKRESPONSE,
   __module__ = 'health_pb2'
-  # @@protoc_insertion_point(class_scope:pod_discovery.HealthCheckResponse)
+  # @@protoc_insertion_point(class_scope:com.symphony.service.poddiscovery.grpc.HealthCheckResponse)
   ))
 _sym_db.RegisterMessage(HealthCheckResponse)
 
@@ -153,7 +153,7 @@ try:
         channel: A grpc.Channel.
       """
       self.Check = channel.unary_unary(
-          '/pod_discovery.Health/Check',
+          '/com.symphony.service.poddiscovery.grpc.Health/Check',
           request_serializer=HealthCheckRequest.SerializeToString,
           response_deserializer=HealthCheckResponse.FromString,
           )
@@ -176,7 +176,7 @@ try:
         ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
-        'pod_discovery.Health', rpc_method_handlers)
+        'com.symphony.service.poddiscovery.grpc.Health', rpc_method_handlers)
     server.add_generic_rpc_handlers((generic_handler,))
 
 
@@ -208,13 +208,13 @@ try:
     file not marked beta) for all further purposes. This function was
     generated only to ease transition from grpcio<0.15.0 to grpcio>=0.15.0"""
     request_deserializers = {
-      ('pod_discovery.Health', 'Check'): HealthCheckRequest.FromString,
+      ('com.symphony.service.poddiscovery.grpc.Health', 'Check'): HealthCheckRequest.FromString,
     }
     response_serializers = {
-      ('pod_discovery.Health', 'Check'): HealthCheckResponse.SerializeToString,
+      ('com.symphony.service.poddiscovery.grpc.Health', 'Check'): HealthCheckResponse.SerializeToString,
     }
     method_implementations = {
-      ('pod_discovery.Health', 'Check'): face_utilities.unary_unary_inline(servicer.Check),
+      ('com.symphony.service.poddiscovery.grpc.Health', 'Check'): face_utilities.unary_unary_inline(servicer.Check),
     }
     server_options = beta_implementations.server_options(request_deserializers=request_deserializers, response_serializers=response_serializers, thread_pool=pool, thread_pool_size=pool_size, default_timeout=default_timeout, maximum_timeout=maximum_timeout)
     return beta_implementations.server(method_implementations, options=server_options)
@@ -227,16 +227,16 @@ try:
     file not marked beta) for all further purposes. This function was
     generated only to ease transition from grpcio<0.15.0 to grpcio>=0.15.0"""
     request_serializers = {
-      ('pod_discovery.Health', 'Check'): HealthCheckRequest.SerializeToString,
+      ('com.symphony.service.poddiscovery.grpc.Health', 'Check'): HealthCheckRequest.SerializeToString,
     }
     response_deserializers = {
-      ('pod_discovery.Health', 'Check'): HealthCheckResponse.FromString,
+      ('com.symphony.service.poddiscovery.grpc.Health', 'Check'): HealthCheckResponse.FromString,
     }
     cardinalities = {
       'Check': cardinality.Cardinality.UNARY_UNARY,
     }
     stub_options = beta_implementations.stub_options(host=host, metadata_transformer=metadata_transformer, request_serializers=request_serializers, response_deserializers=response_deserializers, thread_pool=pool, thread_pool_size=pool_size)
-    return beta_implementations.dynamic_stub(channel, 'pod_discovery.Health', cardinalities, options=stub_options)
+    return beta_implementations.dynamic_stub(channel, 'com.symphony.service.poddiscovery.grpc.Health', cardinalities, options=stub_options)
 except ImportError:
   pass
 # @@protoc_insertion_point(module_scope)

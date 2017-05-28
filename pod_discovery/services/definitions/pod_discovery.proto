@@ -5,7 +5,7 @@ syntax = "proto3";
 
 option objc_class_prefix = "PODDSC";
 
-package pod_discovery;
+package com.symphony.service.poddiscovery.grpc;
 
 // Interface exported by the server.
 service PodDiscovery {

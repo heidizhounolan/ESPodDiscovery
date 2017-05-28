@@ -15,12 +15,12 @@ class PodDiscoveryStub(object):
       channel: A grpc.Channel.
     """
     self.GetPod = channel.unary_unary(
-        '/pod_discovery.PodDiscovery/GetPod',
+        '/com.symphony.service.poddiscovery.grpc.PodDiscovery/GetPod',
         request_serializer=pod__discovery__pb2.PodName.SerializeToString,
         response_deserializer=pod__discovery__pb2.Pod.FromString,
         )
     self.ListPods = channel.unary_stream(
-        '/pod_discovery.PodDiscovery/ListPods',
+        '/com.symphony.service.poddiscovery.grpc.PodDiscovery/ListPods',
         request_serializer=pod__discovery__pb2.ListPodRequest.SerializeToString,
         response_deserializer=pod__discovery__pb2.Pod.FromString,
         )
@@ -59,5 +59,5 @@ def add_PodDiscoveryServicer_to_server(servicer, server):
       ),
   }
   generic_handler = grpc.method_handlers_generic_handler(
-      'pod_discovery.PodDiscovery', rpc_method_handlers)
+      'com.symphony.service.poddiscovery.grpc.PodDiscovery', rpc_method_handlers)
   server.add_generic_rpc_handlers((generic_handler,))
